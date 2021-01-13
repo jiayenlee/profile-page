@@ -31,7 +31,7 @@ a:hover {
 }
 
 .card-white {
-    background-color: olive;
+    background-color: olive !important;
     width: 800px;
     margin: 24px auto;
     padding: 30px;

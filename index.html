@@ -4,38 +4,114 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta charset="utf-8">
+      <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+
       <title> Profile </title>
     </head>
 
     <body>
-      <div class="container">
-        <div class="card" id="intro-card">
-          <h1>Hello! i'm jiayen</h1>
+      <div class="navbar">
+        <a href="#" id="navlogo">Jiayen</a>
+        <div class="nav-items">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#qualification">Qualification</a></li>
+          </ul>
+        </div>
+      </div>
 
-          <img class="img-circle" src="images/profile.jpg" alt="profile photo"/>
+      <div class="home-container" id="home">
+        <div class="intro">
+          <h1 id="intro-title">Hi! i'm jiayen</h1>
 
-          <p id="intro">I've attended a 6 months part time Web Developer bootcamp with Lewagon while holding onto a full time job as a Shipping exective in Evergreen Marine Singapore pte ltd 🌍.
+          <p>I've attended a 6 months part time Web Developer bootcamp with Lewagon while holding onto a full time job as a Shipping executive in Evergreen Marine Singapore pte ltd
+          <i class="em em-ship" aria-role="presentation" aria-label="SHIP"></i>.
           </p>
 
-          <a class="button" href="https://www.lewagon.com" target="_blank">Le Wagon</a>
+          <div class="social">
+            <a class="fa fa-linkedin" href="https://sg.linkedin.com/" target="_blank"></a>
+            <a class="fa fa-github" href="https://github.com/" target="_blank"></a>
+            <a class="fa fa-google" href="mailto:jiiayenn.lee@gmail.com"></a>
+          </div>
 
         </div>
+        
+        <img class="img-circle" src="images/profile.jpg" alt="profile photo"/>
 
-        <div class="card">
-          <h2>Follow Me</h2>
-          <ul>
-            <li>
-              <a href="https://www.facebook.com/" class="social-icon" target="_blank">
-                <i class="fa fa-facebook"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/" target="_blank" class="social-icon">
-                <i class="fa fa-instagram"></i> 
-              </a>
-            </li>
-          </ul>
-        </div>  
       </div>
+
+      <div class="about-container" id="about">
+        <div class="description">
+          <h1 class="header">About Me</h1>
+          <p>I've attended a 6 months part time Web Developer bootcamp with Lewagon while holding onto a full time job as a Shipping executive in Evergreen Marine Singapore pte ltd 🌍.
+          </p>
+          <div class="resume">
+            <a class="button" href="#">View Resume</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="experience-container" id="experience">
+        <h1 class="header">Experience</h1>
+        <div class="cards">
+          <div class="card">
+            <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+            <div class="info-card">
+              <h5>Pizza Man</h5>
+              <p>short description</p>
+            </div>
+          </div>
+
+          <div class="card">
+            Shipping Executive
+          </div>
+
+          <div class="card">
+            Admin Assistant
+          </div>
+
+          <div class="card">
+            Internship
+          </div>
+        </div>
+      </div>
+
+      <div class="qualification-container" id="qualification">
+        <h1 class="header">Qualification</h1>
+        <div class="timeline">
+          <div class="container left">
+            <div class="content">
+              <h4>Web Development</h4>
+              <p>Le Wagon Singapore Coding Bootcamp</p>
+              <p class="dates">Oct 2020 - May 2021 (Part time, 24 weeks)</p>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <h4>BSc (Hons) Maritime Business and Maritime Law</h4>
+              <P>University of Plymouth</P>
+              <p class="dates">2016-2017</p>
+            </div>
+          </div>
+          <div class="container left">
+            <div class="content">
+              <h4>Diploma in Maritime Business</h4>
+              <p>Singapore Polytechnic</p>
+              <p class="dates">2013-2016</p>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <h4>GCE O-LEVEL </h4>
+              <p>Yishun Town Secondary School</p>
+              <p class="dates">2008-2012</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
     </body>
 </html>

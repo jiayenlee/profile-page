@@ -14,18 +14,21 @@ body {
 
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
   align-items: center;
   padding: 20px 10%;
 	background-color: rgb(243, 235, 219);
+	position: fixed;
+	width: 100%;
+	z-index: 1;
 }
 
 .nav-items{
-  flex: 1;
   text-align: right;
+	margin-right: 20%;
 }
 
-li{
+.nav-list{
 	list-style: none;
 	display: inline-block;
 	padding: 0 12px;
@@ -37,15 +40,10 @@ a {
 
 .home-container {
 	background-color: white;
-	height: 50%;
-	padding: 40px 100px;
+	height: auto;
+	padding: 100px 100px;
 	display: flex;
 	justify-content: space-between;
-}
-
-#intro-title {
-	text-align: center;
-	padding-bottom: 20px;
 }
 
 .intro {
@@ -99,7 +97,7 @@ a {
 
 .about-container {
 	background-color: whitesmoke;
-	height: 50%;
+	height: auto;
 }
 
 .description {
@@ -125,13 +123,13 @@ a {
 }
 
 .button:hover {
-	background-color: wheat;
+	background-color: rgb(243, 235, 219);
 	color: black;
 }
 
 .experience-container {
 	background-color: white;
-	height: 50%;
+	height: auto;
 	padding: 40px 100px;
 	display: flex;
 	justify-content: space-between;
@@ -142,19 +140,55 @@ a {
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-gap: 20px;
 	margin: 20px auto;
-	width: 70%;
+	width: 80%;
 	text-align: center;
 }
 
 .card {
-	border: black solid 3px;
+	box-shadow: 3px 3px 4px lightgrey;
+	position: relative;
+	top: 0;
+	transition: top ease 0.1s;
+}
 
+.card:hover {
+	top: -10px;
 }
 
 .card > img {
   height: 120px;
-  width: 100%;
+  width: 60s%;
   object-fit: cover;
+	padding-top: 20px;
+}
+
+.info-card {
+	padding-top: 30px;
+	text-align: center;
+}
+
+.info-list {
+	list-style-type: circle black;
+	text-align: left;
+	padding: 20px 18px 20px 40px;
+	font-size: 15px;
+	margin-bottom: 20px;
+}
+
+ul.info-list > li {
+	padding-top: 10px;
+}
+
+.pizza-button {
+	background-color: rgb(100, 100, 240);
+	color: white;
+	padding: 10px 20px;
+	border-radius: 5px;
+}
+
+.pizza-button:hover {
+	background-color: rgb(243, 235, 219);
+	color: black;
 }
 
 .qualification-container {
@@ -184,6 +218,7 @@ a {
   padding: 10px 40px;
   position: relative;
   width: 45%;
+	
 }
 
 .container::after {
@@ -197,6 +232,7 @@ a {
   top: 15px;
   border-radius: 50%;
   z-index: 1;
+
 }
 
 .left {
@@ -218,6 +254,7 @@ a {
   border: medium solid white;
   border-width: 10px 0 10px 10px;
   border-color: transparent transparent transparent white;
+	
 }
 
 .right::before {
@@ -235,6 +272,7 @@ a {
 
 .right::after {
   left: -16px;
+	
 }
 
 .content {

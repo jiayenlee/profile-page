@@ -91,8 +91,7 @@ a {
 .img-circle {
 	width: 20%;
 	border-radius: 50%;
-	height: 80%;
-	margin: 10px 10% 0 0;
+	margin: 16px 21% 0 0;
 }
 
 .about-container {
@@ -105,6 +104,10 @@ a {
 	padding: 50px 25%;
 	text-align: center;
 	line-height: 1.6;
+}
+
+p {
+	margin-top: 10px;
 }
 
 .header {
@@ -193,7 +196,7 @@ ul.info-list > li {
 
 .qualification-container {
 	background-color: whitesmoke;
-	height: 100%;
+	height: auto;
 	padding: 40px 100px;
 }
 
@@ -217,8 +220,7 @@ ul.info-list > li {
 .container {
   padding: 10px 40px;
   position: relative;
-  width: 45%;
-	
+  width: 45%;	
 }
 
 .container::after {
@@ -232,7 +234,6 @@ ul.info-list > li {
   top: 15px;
   border-radius: 50%;
   z-index: 1;
-
 }
 
 .left {
@@ -253,8 +254,7 @@ ul.info-list > li {
   right: 30px;
   border: medium solid white;
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent white;
-	
+  border-color: transparent transparent transparent white;	
 }
 
 .right::before {
@@ -295,20 +295,21 @@ a:hover {
 
 
 
-/* @media (max-width: 960px) { */
-	/* For a screen < 960px, this CSS will be read */
-	/* .container {
-		width: 700px;
+@media (max-width: 960px) {
+
+	.img-circle {
+		width: 30%;
+		border-radius: 50%;
+		margin: 16px 10px 0 0;
 	}
-} */
-/* @media (max-width: 720px) {
-	/* For a screen < 720px, this CSS will be read */
-	/* .container {
-		width: 500px;
+
+	.intro {
+		margin-left: 50px;
 	}
-} */
-/* @media (max-width: 540px) { */
-	/* For a screen < 540px, this CSS will be read */
-	/* .container {
-		width: 300px; */
+
+	.cards {
+		grid-template-columns: 1fr 1fr;
+	}
+
+}
 

@@ -382,3 +382,15 @@ a:hover {
 
 }
 
+@media (max-width: 350px) {
+
+	.about-container {
+		width: 165%;
+	}
+
+	.experience-container {
+		height: 200%;
+		width: 100%;
+	}
+}
+

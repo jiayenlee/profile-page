@@ -298,9 +298,10 @@ a:hover {
 @media (max-width: 960px) {
 
 	.img-circle {
-		width: 30%;
+		width: 40%;
+		height: 40%;
 		border-radius: 50%;
-		margin: 16px 10px 0 0;
+		margin: 16px -32px 0 0;
 	}
 
 	.intro {
@@ -309,6 +310,74 @@ a:hover {
 
 	.cards {
 		grid-template-columns: 1fr 1fr;
+	}
+
+	.left {
+		left: -50px;
+	}
+
+}
+
+@media (max-width: 500px) {
+
+	.home-container {
+		width: 100%;
+	}
+
+	.intro {
+		width: 50%;
+		margin-left: 0px;
+	}
+
+	.header {
+		font-size: 20px;
+	}
+
+	.img-circle {
+		width: 40%;
+		height: 40%;
+		border-radius: 50%;
+		margin: 20px -30px 0 0;
+	}
+
+	.social {
+		display: flex;
+	}
+
+	.about-container {
+		width: 153%;
+	}
+
+	.experience-container {
+		height: 240%;
+		width: 100%;
+	}
+
+	.cards {
+		grid-template-columns: 1fr;
+		position: absolute;
+		margin-top: 50px ;
+		margin-left: 40px;
+		grid-gap: 70px;
+	}
+
+	.card {
+		height: 110%;
+		width: 100%;
+	}
+
+	.qualification-container {
+		width: 100%;
+	}
+
+	.container {
+		padding: 10px 40px;
+		position: relative;
+		width: 60%;	
+	}
+
+	.left {
+		left: -115px;
 	}
 
 }
